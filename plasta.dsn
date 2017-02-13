@@ -1,0 +1,10 @@
+[ODBC]
+DRIVER=SQL Native Client
+UID=Administrator
+LANGUAGE=us_english
+DATABASE=plasta
+WSID=ADMIN
+APP=Microsoft Data Access Components
+Trusted_Connection=Yes
+SERVER=ADMIN\SQLEXPRESS
+Description=plasta

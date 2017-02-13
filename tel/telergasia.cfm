@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<cfheader name="expires" value="#NOW()#">
+<cfheader name="pragma" value="no-cache">
+<cfheader name="cache-control" value="no-cache,no-store,must-revalidate">
+
+<cfinclude template="/expiration/expire.cfm">
+<cfset setEncoding("URL","utf-8")>
+<cfajaximport tags="cftooltip">
+
+<html>
+<head>
+    <title>ΣΔΟΕ &nbsp;  Κεντρική &nbsp;  Υπηρεσία - Δραστηριότητα  &nbsp; Λαθρεμπόρων  </title>
+	<SCRIPT src="tel_plasta.js">
+	</SCRIPT>
+</head>
+
+<body>
+<cflayout name="thelayout" type="border">
+
+<cflayoutarea position="top" align="center">
+<font style="color:#0000CC " size="+2"> ΥΠΟΥΡΓΕΙΟ ΟΙΚΟΝΟΜΙΚΩΝ </font> <br/>
+<font style="color: #996666" size="+1"> ΣΩΜΑ ΔΙΩΞΗΣ ΟΙΚΟΝΟΜΙΚΟΥ ΕΓΚΛΗΜΑΤΟΣ (ΣΔΟΕ) </font>
+</cflayoutarea>
+
+<cflayoutarea  position="center" align="center" overflow="auto">
+<p align="left">
+<font size="2">
+<a href="telmain.cfm">
+Κεντρικό μενού </a> &nbsp; / &nbsp; Αναζήτηση Λαθρεμπόρων με Δραστηριότητα
+</font>
+</p>
+
+
+<p align="center">
+<cfform name="form_afm" action="telergasia_apo.cfm" method="post">
+<font face="Arial" size="3">
+Εισαγωγή &nbsp; Δραστηριότητας:&nbsp;
+</font>
+<cfinput type="text" 
+name="t_afm" 
+onFocus="set_Color();"
+onBlur="setold_Color();"
+Message="Παρακαλώ εισάγετε μια έγκυρη δραστηριότητα!" 
+Required="Yes"
+maxlength="50">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<INPUT Type="submit" value="Αναζήτηση"> 
+&nbsp;
+&nbsp;
+<INPUT Type="button" value="Καθαρισμός" onClick="clear_afm();">
+</cfform>
+</p>
+
+</cflayoutarea>
+
+
+<cflayoutarea position="bottom" align="center" splitter="true">
+<font style="color:#666666" size="3" > &copy; Copyright  Σ.Δ.Ο.Ε </font> </br>
+<font style="color:#666666" size="3" > Αθήνα 2010 </font>
+</cflayoutarea>
+</cflayout>
+
+</body>
+</html>

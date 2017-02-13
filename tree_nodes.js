@@ -1,0 +1,28 @@
+var TREE_NODES = [
+  ['Εισαγωγή   στοιχείων', null, null, 
+    ['για  εκδότες', 'insert.cfm', null], 
+    ['για   λήπτες', 'n_insert.cfm', null]], 
+  ['Αναζήτηση  στοιχείων', null, null, 
+    ['με   ΑΦΜ', null, null, 
+      ['για  εκδότες', 'select.cfm', null], 
+      ['για  λήπτες', 'n_select.cfm', null]], 
+    ['με  Όνομα - Επώνυμο', null, null, 
+      ['για  εκδότες', 'epwnymia.cfm', null], 
+      ['για  λήπτες', 'n_epwnymia.cfm', null]], 
+    ['με  Δραστηριότητα', null, null, 
+      ['για  εκδότες', 'ergasia.cfm', null], 
+      ['για  λήπτες', 'n_ergasia.cfm', null]], 
+    ['με  ημερομηνία  καταχώρησης', null, null, 
+      ['για  εκδότες', 'date.cfm', null], 
+      ['για  λήπτες', 'n_date.cfm', null]], 
+    ['με  ημερομηνία  και  αριθμό  έκθεσης  ελέγχου', null, null, 
+      ['για  εκδότες', 'essay.cfm', null], 
+      ['για  λήπτες', 'n_essay.cfm', null]]], 
+  ['Ενημέρωση  στοιχείων', null, null, 
+    ['για  εκδότες', 'find.cfm', null], 
+    ['για  λήπτες', 'n_find.cfm', null]], 
+  ['Διαγραφή  στοιχείων', null, null, 
+    ['για  εκδότες', 'timh.cfm', null], 
+    ['για  λήπτες', 'n_timh.cfm', null]]
+];
+
